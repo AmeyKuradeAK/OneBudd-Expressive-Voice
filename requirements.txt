@@ -1,16 +1,22 @@
 # Voice AI Training System - Dependencies
-# Compatible with Google Colab and Python 3.10+
+# Compatible with Google Colab and Python 3.12+
 
 # Core Deep Learning
 torch>=2.1.0
 torchaudio>=2.1.0
 torchvision>=0.16.0
 
-# Text-to-Speech Models
-TTS>=0.22.0
+# Text-to-Speech Models (Python 3.12 Compatible)
+# Using Idiap's fork of Coqui TTS which supports Python 3.12
+coqui-tts>=0.24.0
 transformers>=4.35.0
 accelerate>=0.24.0
 datasets>=2.14.0
+
+# Alternative TTS Options (choose based on your needs):
+# edge-tts>=6.1.0          # Microsoft Edge TTS (lightweight, cloud-based)
+# bark>=1.0.0              # Suno Bark (included below for alternative)
+# parler-tts>=0.1.0        # Hugging Face Parler TTS (high quality)
 
 # Audio Processing
 librosa>=0.10.0

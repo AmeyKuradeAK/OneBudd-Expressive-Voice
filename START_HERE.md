@@ -211,9 +211,11 @@ A **complete, production-quality Voice AI training system** for Google Colab tha
 
 ### Google Colab
 - **GPU**: T4, V100, or A100 (free tier T4 works!)
-- **Runtime**: Python 3.10+
+- **Runtime**: Python 3.9+ (including Python 3.12+)
 - **Storage**: 10+ GB Google Drive space
 - **RAM**: 12+ GB (automatically provided)
+
+> 📝 **Python 3.12 Support**: This system uses `coqui-tts` (Idiap fork) for Python 3.12+ compatibility. See [PYTHON_3.12_COMPATIBILITY.md](PYTHON_3.12_COMPATIBILITY.md) for details.
 
 ### Models Supported
 | Model | GPU Needed | Quality | Speed | Use Case |
@@ -332,10 +334,11 @@ https://keithito.com/LJ-Speech-Dataset/
 Upload to Google Drive
 ```
 
-### Import Errors
+### Import Errors / Python 3.12 Issues
 ```
 Solution: Re-run setup.ipynb
 All dependencies will be reinstalled
+See PYTHON_3.12_COMPATIBILITY.md for troubleshooting
 ```
 
 ### Gradio Not Loading
@@ -495,10 +498,11 @@ After running all notebooks, you should have:
 - **README.md** - Complete guide
 - **INDEX.md** - File overview
 - **PROJECT_SUMMARY.md** - Technical specs
+- **PYTHON_3.12_COMPATIBILITY.md** - Python 3.12+ guide
 - **This file** - Quick start
 
 ### External Resources
-- [Coqui TTS Docs](https://tts.readthedocs.io/)
+- [Coqui TTS Docs (Idiap Fork)](https://coqui-tts.readthedocs.io/)
 - [PyTorch Tutorials](https://pytorch.org/tutorials/)
 - [Gradio Docs](https://gradio.app/docs/)
 - [LJSpeech Dataset](https://keithito.com/LJ-Speech-Dataset/)

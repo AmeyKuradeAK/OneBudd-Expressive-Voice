@@ -53,9 +53,20 @@ Click the badges below to open notebooks directly in Colab:
 
 ### Google Colab
 - **GPU**: T4, V100, or A100 (recommended)
-- **Runtime**: Python 3.10+
+- **Runtime**: Python 3.9+ (including Python 3.12+)
 - **Storage**: 10+ GB Google Drive space
 - **RAM**: 12+ GB
+
+### Python 3.12+ Compatibility
+This system now supports **Python 3.12+** using the Idiap Research Institute's fork of Coqui TTS.
+
+> 📝 **Important**: The original Coqui TTS (`TTS` package) does not support Python 3.12. We use `coqui-tts` (Idiap fork) which provides full Python 3.12 compatibility with the same API.
+
+**See**: [Python 3.12 Compatibility Guide](PYTHON_3.12_COMPATIBILITY.md) for:
+- Migration instructions
+- Alternative TTS options
+- Troubleshooting tips
+- Compatibility matrix
 
 ### Supported Models
 
@@ -105,7 +116,7 @@ Local Workspace:
    - Recommends optimal model configuration
 
 2. **Dependency Installation**
-   - Installs PyTorch, TTS, Gradio, and all requirements
+   - Installs PyTorch, coqui-tts (Python 3.12+ compatible), Gradio, and all requirements
    - Validates all imports
 
 3. **Directory Creation**
@@ -341,9 +352,11 @@ Solution: Check internet connection
 Or manually download LJSpeech and upload to Drive
 ```
 
-**4. Import Errors**
+**4. Import Errors / Python 3.12 Issues**
 ```
-Solution: Run setup.ipynb again to reinstall dependencies
+Solution: Ensure you're using coqui-tts (not TTS)
+Run setup.ipynb again to reinstall dependencies
+See PYTHON_3.12_COMPATIBILITY.md for troubleshooting
 ```
 
 **5. Gradio Not Loading**
@@ -355,7 +368,8 @@ Check that share=True in demo.launch()
 ## 📚 Additional Resources
 
 ### Documentation
-- [Coqui TTS Docs](https://tts.readthedocs.io/)
+- [Coqui TTS Docs (Idiap Fork)](https://coqui-tts.readthedocs.io/)
+- [Python 3.12 Compatibility Guide](PYTHON_3.12_COMPATIBILITY.md) (included)
 - [PyTorch Docs](https://pytorch.org/docs/)
 - [Gradio Docs](https://gradio.app/docs/)
 
@@ -383,7 +397,7 @@ This project is for educational and demonstration purposes.
 
 **Dependencies Licenses:**
 - PyTorch: BSD License
-- Coqui TTS: MPL 2.0 License
+- Coqui TTS (Idiap Fork): MPL 2.0 License
 - Gradio: Apache 2.0 License
 
 ## ⚠️ Important Notes
