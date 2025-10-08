@@ -20,9 +20,11 @@ Click the badges below to open notebooks directly in Colab:
 
 | Notebook | Description | Open in Colab |
 |----------|-------------|---------------|
-| **setup.ipynb** | Environment setup & validation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#) |
-| **train_or_finetune.ipynb** | Dataset preparation & training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#) |
-| **demo.ipynb** | Interactive TTS demo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#) |
+| **setup.ipynb** | Environment setup & validation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/setup.ipynb) |
+| **train_or_finetune.ipynb** | Dataset preparation & training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/train_or_finetune.ipynb) |
+| **demo.ipynb** | Interactive TTS demo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/demo.ipynb) |
+
+> **Note:** Replace `YOUR_USERNAME/YOUR_REPO` with your actual GitHub repository path.
 
 ### 2. Run the Notebooks (In Order)
 
